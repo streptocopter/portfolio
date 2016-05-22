@@ -1,0 +1,25 @@
+NAV
+Source sans Pro
+
+Open Sans
+
+Roboto
+
+Archivo Narrow
+
+--Karla
+
+Varela Round
+
+
+H1
+
+--Playfair Display
+
+Alegreya Sans
+
+Source Sans Pro
+
+Roboto
+
+url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300|Archivo+Narrow:400,700|Karla:400,700|Varela+Round|Playfair+Display:400,700,900|Alegreya+Sans:400,500,700,800|Open+Sans:400,600,700,800);

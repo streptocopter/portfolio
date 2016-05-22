@@ -1,0 +1,351 @@
+@import url("..//css/bootstrap.min.css");
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Delius+Unicase:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+
+/*----------------------------------------------------------------------------------------
+									GENERAL SETTINGS
+----------------------------------------------------------------------------------------*/
+body {
+    background: #fff ;
+}
+
+#portfolio {
+
+    margin-top: 50px;
+    
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#portfolio h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family: Montserrat;
+}
+
+.clearfix {
+    margin: 30px 0 30px 0;
+}
+
+#portfolio h4{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: Montserrat; 
+}
+
+#intro p {
+    font-size: 1.4em;
+    line-height: .1em;
+}
+
+.leftovers {
+    margin-top: 50px;
+    color: #414141 !important;
+}
+
+#intro {
+    margin-top: 50px;
+    color: #414141;
+}
+
+a, a:hover {
+    color: #414141;
+    text-decoration: none;
+        list-style: none;
+    transition: .05s;
+}
+
+#portfolio a{
+    color: #454545 !important;
+    text-decoration: none;
+}
+
+#portfolio a:hover{
+    color: #767676 !important;
+    text-decoration: none;
+
+}
+
+
+#portfolio .container {
+text-decoration: none;
+list-style-type: none;
+
+}
+
+
+.poster {
+    width: 400px;
+    height: 400px;
+
+    right: 20vw;
+    top: 270px;
+    visibility: hidden;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------
+									Featured
+----------------------------------------------------------------------------------------*/
+
+#back {
+    position: fixed;
+    margin-top: 20px;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0px;
+}
+
+.back {
+    text-align: right;
+}
+
+.back a{
+    color: #454545;
+    font-size: 70px;
+}
+
+.hero {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.row:hover .poster{
+    right: 20vw;
+    visibility: visible;
+}
+#featured {
+    margin-top: 20px;
+    color: #414141;
+    font-size: 1.1em;
+    font-family: Merriweather;
+    line-height: 1.7em;
+}
+
+
+
+#featured .container .article a:nth-child(odd)  {
+    max-width: 250px;
+    float: right;
+    margin-left: 20px;
+    margin: 50px -50px 50px 50px; 
+    clear: both;
+}
+
+#featured .container .article a:nth-child(even)  {
+    max-width: 250px;
+    float: left;
+    margin: 50px 50px 50px -50px; 
+     clear: both;
+}
+
+#featured h1 {
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 3em;
+    color: #363636;
+}
+
+#featured h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-top: 40px;
+}
+
+#featured b {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: Merriweather;
+    font-weight: 700;
+}
+
+.lead_paragraph {
+    line-height: 2em;
+}
+
+
+
+
+footer {
+    margin-top: 300px;
+}
+
+.img_full {
+    min-width: 600px !important;
+    float: none !important;
+    margin: 0px !important;
+}
+
+.img_full img{
+    margin-top: 40px !important;
+}
+
+iframe {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#featured .multiple_img img{
+    display: inline;
+    max-width: 100%; !important;
+    left: 0;
+    right: 0;
+    margin-top: 40px !important;
+}
+
+
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------
+									Animations
+----------------------------------------------------------------------------------------*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInTop {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(-30px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+         
+
+@keyframes fadeInTop {
+   0% {
+      opacity: 0;
+      transform: translateY(-30px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}   
+
+.fadeInTop {
+    -webkit-animation-name: fadeInTop;
+    animation-name: fadeInTop;
+} 
+
+
+
+
+
+
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(70px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+         
+
+@keyframes fadeInBottom {
+   0% {
+      opacity: 0;
+      transform: translateY(50px);
+
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}   
+
+.fadeInBottom {
+    -webkit-animation-name: fadeInBottom;
+    animation-name: fadeInBottom;
+} 
+/*----------------------------------------------------------------------------------------
+									@MEDIA
+----------------------------------------------------------------------------------------*/
+
+@media(max-width:767px){
+    
+#portfolio h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: Montserrat;
+
+}
+#portfolio h4{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: Montserrat; 
+}
+
+.about {
+
+        
+    }
+}
+
+
+@media(min-width:768px){
+
+
+    
+}
+
+
+@media(min-width:992px){}
+
+@media(min-width:1200px){
+
+
+    
+}
+
+
+
