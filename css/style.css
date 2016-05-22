@@ -46,22 +46,27 @@ img {
     font-family: Montserrat; 
 }
 
-#intro p {
+.intro p {
     font-size: 1.4em;
     line-height: .1em;
 }
 
-.leftovers {
-    margin-top: 50px;
-    color: #414141 !important;
-}
 
-#intro {
+.intro {
     margin-top: 50px;
     color: #414141;
 }
 
-a, a:hover {
+.intro a {
+    transition: .2s;
+}
+
+.intro a:hover {
+    text-decoration: line-through;
+}
+
+
+a, a:hover, a:focus {
     color: #414141;
     text-decoration: none;
         list-style: none;
@@ -110,24 +115,32 @@ list-style-type: none;
 #back {
     position: fixed;
     margin-top: 20px;
-    z-index: 999;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 0px;
+    pointer-events:none;  
 }
 
 .back {
+    float: right;
     text-align: right;
 }
 
 .back a{
+    width: 50px;
     color: #454545;
     font-size: 70px;
+    transition: .1s;
+    z-index: 999;
+    pointer-events:auto; 
+}
+
+.back a:hover{
+    color: red;
 }
 
 .hero {
-    margin: 0px;
-    padding: 0px;
     font-family: Montserrat;
     font-weight: 700;
 }
@@ -187,12 +200,15 @@ list-style-type: none;
 .lead_paragraph {
     line-height: 2em;
 }
-
+.article  {
+ margin-top: 75px;   
+}
 
 
 
 footer {
     margin-top: 300px;
+    margin-bottom: 50px;
 }
 
 .img_full {
@@ -228,7 +244,10 @@ video {
   height: auto   !important;
 }
 
+.name {
 
+    font-weight: 800;
+}    
 
 
 
@@ -280,7 +299,7 @@ video {
 @-webkit-keyframes fadeInBottom {
   0% {
      opacity: 0;
-     -webkit-transform: translateY(70px);
+     -webkit-transform: translateY(50px);
   }
   100% {
      opacity: 1;
@@ -314,21 +333,72 @@ video {
 #portfolio h3{
     text-align: left;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: Montserrat;
-
 }
+    
 #portfolio h4{
     text-align: left;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Montserrat; 
 }
 
-.about {
+#featured .container .article a:nth-child(odd)  {
+    max-width: 130px;
+    float: right;
+    margin: 50px 0px 50px 50px; 
+    clear: both;
+}
 
-        
-    }
+#featured .container .article a:nth-child(even)  {
+    max-width: 130px;
+    float: left;
+    margin: 50px 50px 50px 0px; 
+     clear: both;
+}
+.a_xs_fullwidht a  {
+       min-width:  100% !important;
+    float: none;
+    }   
+    
+    .article  {
+ margin-top: 30px;   
+}
+.intro p {
+    font-size: 1.2em;
+    line-height: .1em;
+}    
+    
+    
+footer {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}    
+
+.about_underline {
+    text-decoration: underline;
+}
+    
+#featured h1 {
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 2em;
+    color: #363636;
+}
+.second_h1 {
+    margin-top: 100px !important;
+    }    
+.article  {
+    margin-top: 30px;
+ 
+}    
+.name {
+    font-size: 1.2em;
+    font-weight: 800;
+}    
+    
 }
 
 
@@ -339,7 +409,78 @@ video {
 }
 
 
-@media(min-width:992px){}
+@media(min-width:992px){
+        
+#portfolio h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-family: Montserrat;
+}
+    
+#portfolio h4{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: Montserrat; 
+}
+
+#featured .container .article a:nth-child(odd)  {
+    max-width: 130px;
+    float: right;
+    margin: 50px 0px 50px 50px; 
+    clear: both;
+}
+
+#featured .container .article a:nth-child(even)  {
+    max-width: 130px;
+    float: left;
+    margin: 50px 50px 50px 0px; 
+     clear: both;
+}
+.a_xs_fullwidht a  {
+       min-width:  100% !important;
+    float: none;
+    }   
+    
+    .article  {
+ margin-top: 30px;   
+}
+.intro p {
+    font-size: 1.2em;
+    line-height: .1em;
+}    
+    
+    
+footer {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}    
+
+.about_underline {
+    text-decoration: underline;
+}
+    
+#featured h1 {
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 2em;
+    color: #363636;
+}
+.second_h1 {
+    margin-top: 100px !important;
+    }    
+.article  {
+    margin-top: 30px;
+ 
+}    
+.name {
+    font-size: 1.2em;
+    font-weight: 800;
+}   
+    
+}
 
 @media(min-width:1200px){
 
